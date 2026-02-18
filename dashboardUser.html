@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboardUser.css">
+    <title>Dashboard Usuário | SGE</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <p>Usuário: João Silva</p>
+            <p>Cargo: Usuário</p>
+            <a href="">Ver perfil</a>
+        </div>
+    </div>
+        <div class="card-ponto">
+            <h1>Bater Ponto</h1>
+            <button onclick="baterPonto()">Entrada</button>
+            <button onclick="baterPontoSaida()">Saída</button>
+        </div>
+
+        <div class="card-regisInfo">
+            <h1>Informações</h1>
+            <button>Visualizar Informações</button>
+        </div>
+    </div>
+    <div class="verPontos">
+        <h1>Entradas e Saídas</h1>
+        <p><span id="displayEntrada"></span></p>
+        
+    </div>
+    <script src="controlePontos.js"></script>
+</body>
+</html>
