@@ -9,9 +9,10 @@
 <body>
     <div class="header">
         <div class="navbar">
-            <p>Usuário: João Silva</p>
-            <p>Cargo: Usuário</p>
-            <a href="">Ver perfil</a>
+            <p>Usuário: <span id="displayUser"></span></p>
+            <p>Cargo: <span id="displayCargoUser"></span></p>
+            <a href="perfil.html">Ver perfil</a>
+            <a onclick="sair()">Sair</a>
         </div>
     </div>
         <div class="card-ponto">
@@ -30,6 +31,16 @@
         <p><span id="displayEntrada"></span></p>
         
     </div>
+     <script>
+    document.getElementById("displayUser").innerText = 
+        localStorage.getItem("nomeUsuario") || "Não informado";
+
+    document.getElementById("displayCargoUser").innerText = 
+        localStorage.getItem("cargoUsuario") || "Não informado";
+</script>
+    <script src="controlePerfil.js"></script>
     <script src="controlePontos.js"></script>
+    <script src="controleRegistroUsuarios.js"></script>
+    <script src="controleRotas.js"></script>
 </body>
 </html>

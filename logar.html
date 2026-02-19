@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logar | SGE</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Entrar</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nomd" required><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+            
+            <button id="entrar-user" onclick="salvarDadosUsuario(); irParaDashboardUser();">
+            Entrar
+            </button>
+        </form>
+    </div>
+    <div class="card-admin">
+        <h1>Entrar como Administrador</h1>
+            <label for="nome-admin">Nome:</label>
+            <input type="text" id="nome-admin" name="nome-admin" required ><br><br>
+
+            <label for="senha-admin">Senha:</label>
+            <input type="password" id="senha-admin" name="senha-admin" required ><br><br>
+            
+            <button id="entrar" onclick="salvarDadosAdmin(); irParaDashboardAdmin();">
+             Entrar
+            </button>
+
+                                    
+    </div>
+    <script src="controleRegistroUsuarios.js"></script>
+    <script src="controleRotas.js"></script>
+</body>
+</html>

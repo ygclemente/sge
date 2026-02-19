@@ -9,9 +9,10 @@
 <body>
     <div class="header">
         <div class="navbar">
-            <p>Usuário: João Silva</p>
-            <p>Cargo: Administrador</p>
-            <a href="">Ver perfil</a>
+            <p>Usuário: <span id="displayUser"></span></p>
+            <p>Cargo: <span id="displayCargoUser"></span></p>
+            <a href="perfilAdmin.html">Ver perfil</a>
+            <a onclick="sair()">Sair</a>
             
         </div>
     </div>
@@ -34,6 +35,17 @@
             <button>Visualizar Informações</button>
         </div>
     </div>
+
     
+    <script>
+        document.getElementById("displayUser").innerText = 
+            localStorage.getItem("nomeAdmin") || "Não informado";
+
+        document.getElementById("displayCargoUser").innerText = 
+            localStorage.getItem("cargoAdmin") || "Não informado";
+    </script>
+    <script src="controleRegistroUsuarios.js"></script>
+    <script src="controleRotas.js"></script>
+
 </body>
 </html>
